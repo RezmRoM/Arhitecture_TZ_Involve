@@ -1,0 +1,6 @@
+export { default as BBButton } from './bb-button/BBButton.vue'
+export { default as BBText } from './bb-text/BBText.vue'
+export { default as BBSprite } from './bb-sprite/BBSprite.vue'
+export { default as BBPreloader } from './bb-preloader/BBPreloader.vue'
+export { default as Pagination } from './pagination/Pagination.vue'
+export { default as SearchBar } from './search-bar/SearchBar.vue' 

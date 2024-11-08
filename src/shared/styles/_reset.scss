@@ -1,0 +1,63 @@
+/* Правила размера блока */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Удаление стандартных отступов */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+/* Установка базовых настроек для body */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаление стилей списков для ul, ol элементов */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Оптимизация изображений для работы */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Наследование шрифтов для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаление всех стилей кнопок */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Отключение всех анимаций и переходов для людей, которые предпочитают их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,6 @@
+/* Импорт базовых стилей Tailwind CSS */
+@tailwind base;
+/* Импорт компонентных стилей Tailwind CSS */
+@tailwind components;
+/* Импорт утилитарных классов Tailwind CSS */
+@tailwind utilities;

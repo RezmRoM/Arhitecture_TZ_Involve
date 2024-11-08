@@ -1,0 +1,45 @@
+@use 'sass:map';
+
+$typography-variants: (
+  'body': (
+    'font-size': 1rem,
+    'line-height': 1.5
+  ),
+  'heading': (
+    'font-size': 2rem,
+    'line-height': 1.2
+  )
+);
+
+@mixin typography($variant) {
+  @if map.has-key($typography-variants, $variant) {
+    $variant-props: map.get($typography-variants, $variant);
+    font-size: map.get($variant-props, 'font-size');
+    line-height: map.get($variant-props, 'line-height');
+  }
+}
+
+// Базовые стили типографики
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--color-on-surface);
+}
+
+// Заголовки
+h1 {
+  @include typography('heading');
+  font-weight: 700;
+}
+
+// Основной текст
+p {
+  @include typography('body');
+}
+
+// Подписи
+.caption {
+  @include typography('body');
+} 

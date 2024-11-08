@@ -28,7 +28,7 @@
 
 1. Клонируйте репозиторий:
 ```bash
-git clone <repository-url>
+git clone https://github.com/RezmRoM/Arhitecture_TZ_Involve.git
 ```
 
 2. Установите зависимости:

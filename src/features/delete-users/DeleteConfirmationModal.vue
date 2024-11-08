@@ -54,19 +54,19 @@ export default {
 .e-button {
   min-width: 80px;
   padding: 8px 32px;
-  transition: all 0.3s ease; // Добавляем плавный переход как в BBButton
+  transition: all 0.3s ease;
 
   &.m-confirm {
-    background-color: var(--color-surface);
-    color: var(--color-on-surface);
+    background-color: #e5e7eb;
+    color: #4b5563;
 
     &:hover {
-      background-color: var(--color-surface);
-      opacity: 0.8; // Используем opacity для наведения как в BBButton
+      background-color: #d1d5db;
+      opacity: 0.9;
     }
 
     &:active {
-      transform: scale(0.98); // Добавляем эффект нажатия
+      transform: scale(0.98);
     }
   }
 
@@ -76,11 +76,11 @@ export default {
 
     &:hover {
       background-color: var(--color-primary);
-      opacity: 0.8; // Используем opacity для наведения как в BBButton
+      opacity: 0.8;
     }
 
     &:active {
-      transform: scale(0.98); // Добавляем эффект нажатия
+      transform: scale(0.98);
     }
   }
 

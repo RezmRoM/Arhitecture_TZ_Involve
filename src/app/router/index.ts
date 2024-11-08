@@ -20,7 +20,6 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  // Здесь можно добавить глобальную навигационную защиту
   next()
 })
 

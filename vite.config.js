@@ -31,8 +31,16 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: `
+          @use "sass:math";
           @use "src/shared/styles/variables" as *;
-        `
+        `,
+        logger: {
+          warn: (message) => {
+            if (!message.includes('legacy-js-api')) {
+              console.warn(message)
+            }
+          }
+        }
       }
     }
   },

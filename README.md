@@ -1,35 +1,47 @@
-# vue-sneakers
+# Vue User Management
 
-This template should help get you started developing with Vue 3 in Vite.
+Приложение для управления списком пользователей, построенное на Vue 3 с использованием Options API.
 
-## Recommended IDE Setup
+## Технологический стек
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **Vue 3**
+- **Vite**
+- **TypeScript**
+- **Vuex**
+- **Vue Router**
+- **Sass**
+- **Tailwind CSS**
+- **Feature-Sliced Design**
 
-## Customize configuration
+## Основные функции
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- 📋 Отображение списка пользователей
+- 🔍 Поиск по имени и email
+- ⚡ Сортировка по дате регистрации и рейтингу
+- 📱 Адаптивный дизайн
+- 🌍 Мультиязычность (RU/EN)
+- ⚙️ Пагинация
+- ❌ Удаление пользователей
+- 🚫 Not Found 404
 
-## Project Setup
+## Установка и запуск
 
-```sh
+1. Клонируйте репозиторий:
+```bash
+git clone <repository-url>
+```
+
+2. Установите зависимости:
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
-
-```sh
+3. Запустите проект в режиме разработки:
+```bash
 npm run dev
 ```
 
-### Compile and Minify for Production
-
-```sh
+4. Для сборки проекта:
+```bash
 npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
 ```
